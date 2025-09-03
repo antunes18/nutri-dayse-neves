@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary Meta Tags -->
+  <title>Dra. Dayse Neves CRN1 4621 — Nutrição, Estética & Esporte em Goianésia, GO</title>
+  <meta name="description"
+    content="Dra. Dayse Neves CRN1 4621: Especialista em Nutrição, Obesidade, Estética e Esporte. Atendimento presencial em Goianésia, GO e online. Agende sua consulta." />
+  <meta name="keywords"
+    content="nutricionista, obesidade, estética, esporte, Goianésia, nutrição esportiva, emagrecimento, dieta, acompanhamento nutricional, goianesia, go, goiás, Goiás" />
+  <meta name="author" content="Dra. Dayse Neves" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nutridayseneves.com.br/" />
+  <meta property="og:title" content="NutriEssence • Dra. Dayse Neves — Nutrição, Estética & Esporte" />
+  <meta property="og:description"
+    content="Especialista em Obesidade, Estética e Esporte. Atendimento em Goianésia, GO. Agende sua consulta." />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nutridayseneves.com.br/" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+  <br>
+  <header class="site-header container" role="banner">
+    <div class="brand">
+      <div class="logo-mark" aria-hidden="true" role="img" aria-label="NutriEssence - Dra. Dayse Neves">
+        <i class="fas fa-leaf"></i>
+      </div>
+      <div class="brand-text">
+        <h1>Dra. Dayse Neves, CRN1 4621</h1>
+        <p>'Nutri' Dayse Neves | Nutrição • Estética • Esporte — Goianésia, GO</p>
+      </div>
+    </div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="main-navigation" class="main-nav" aria-label="Menu principal">
+      <a href="#services"><i class="fas fa-concierge-bell"></i> Serviços</a>
+      <a href="#about"><i class="fas fa-user-md"></i> Sobre</a>
+      <a href="#testimonials"><i class="fas fa-comments"></i> Depoimentos</a>
+      <button class="btn-primary" onclick="document.getElementById('book-btn').click()">
+        <i class="fas fa-calendar-check"></i> Agendar
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container" role="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="eyebrow">
+          <i class="fas fa-star"></i> Especialista em Obesidade • Estética • Esporte
+        </span>
+        <h2 id="hero-heading">Transforme sua relação com o corpo e com a saúde de forma elegante e sustentável.</h2>
+        <p class="lead">Atendimento personalizado em Goianésia, com foco em resultados duradouros, estética funcional e
+          performance esportiva. Planos presenciais e online.</p>
+
+        <div class="quick-cta">
+          <button id="book-btn" class="btn-primary" onclick="window.dispatchEvent(new CustomEvent('open-book'))">
+            <i class="fas fa-calendar-check"></i> Agendar Consulta
+          </button>
+          <a class="btn-ghost" href="https://wa.me/556298244024" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <br>
+        <div class="mt-">
+          <div class="card" data-aos="fade-left">
+            <div class="card-with-icon">
+              <div class="card-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <div>
+                <strong>Promoção de boas-vindas</strong>
+                <p>Avaliação nutricional completa + plano inicial com 10% de desconto para novos pacientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-aside" data-aos="fade-left">
+        <div class="card">
+          <h3><i class="fas fa-calendar-alt"></i> Agende sua consulta</h3>
+          <p>Escolha dia, horário e serviço. Ao confirmar você receberá um link via WhatsApp para finalizar o
+            atendimento.</p>
+
+          <!-- Booking widget (Alpine.js) -->
+          <div x-data="bookingWidget()" x-init="init()">
+            <label for="service-select">
+              <i class="fas fa-concierge-bell"></i> Serviço
+            </label>
+            <select id="service-select" x-model="form.service" aria-describedby="service-help">
+              <option value="Avaliação Nutricional">Avaliação Nutricional</option>
+              <option value="Obesidade">Consulta Obesidade</option>
+              <option value="Estética">Estética</option>
+              <option value="Esporte">Nutrição Esportiva</option>
+            </select>
+            <div id="service-help" class="visually-hidden">Selecione o tipo de serviço desejado</div>
+
+            <label for="name-input">
+              <i class="fas fa-user"></i> Nome
+            </label>
+            <input id="name-input" type="text" x-model="form.name" placeholder="Seu nome completo"
+              aria-required="true" />
+
+            <label for="phone-input">
+              <i class="fas fa-phone"></i> Celular
+            </label>
+            <input id="phone-input" type="tel" x-model="form.phone" placeholder="Ex: 62 9 9999-9999"
+              aria-required="true" />
+
+            <div class="form-actions" style="display:flex;gap:8px;margin-top:16px">
+              <button class="btn-primary" onclick="confirm()">
+                <i class="fas fa-check"></i> Confirmar
+              </button>
+              <button class="btn-ghost" onclick="clear()">
+                <i class="fas fa-times"></i> Limpar
+              </button>
+            </div>
+
+            <template x-if="message">
+              <p x-text="message" role="status" aria-live="polite"
+                style="margin-top:12px;color:var(--forest-2);font-weight:600"></p>
+            </template>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" data-aos="fade-up" aria-labelledby="services-heading" style="margin-bottom: 32px;">
+      <h3 id="services-heading"><i class="fas fa-concierge-bell"></i> Serviços</h3>
+      <div class="services">
+        <article class="service" aria-labelledby="obesidade-heading">
+          <div class="service-icon">
+            <i class="fas fa-weight-scale"></i>
+          </div>
+          <h4 id="obesidade-heading">Obesidade</h4>
+          <p>Acompanhamento especializado, com protocolo individualizado e foco em saúde metabólica.</p>
+        </article>
+        <article class="service" aria-labelledby="estetica-heading">
+          <div class="service-icon">
+            <i class="fas fa-spa"></i>
+          </div>
+          <h4 id="estetica-heading">Estética</h4>
+          <p>Planos nutricionais para melhora da pele, composição corporal e tratamentos complementares.</p>
+        </article>
+        <article class="service" aria-labelledby="esporte-heading">
+          <div class="service-icon">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <h4 id="esporte-heading">Esporte</h4>
+          <p>Nutrição para desempenho: estratégias de energia, recuperação e composição corporal para atletas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" data-aos="fade-up" aria-labelledby="about-heading">
+      <div class="photo" aria-hidden="true">
+        <img src="nutricionista_dayse_neves.jpeg"
+          alt="Foto da Dra. Dayse Neves sorrindo, vestindo jaleco branco e com braços cruzados."
+          style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      </div>
+      <div class="bio">
+        <h3 id="about-heading"><i class="fas fa-star"></i> Sobre Mim</h3>
+        <p>A Nutricionista (CRN1 4621) com atuação clínica em obesidade, estética e performance esportiva. Atende
+          presencialmente em Goianésia e online para todo o Brasil.</p>
+        <p>Abordagem humanizada, baseada em evidências e em planos realistas
+          — o objetivo é aliar estética, saúde e funcionalidade.</p>
+        <div class="bio-actions">
+          <a class="btn-primary" href="#" onclick="window.dispatchEvent(new CustomEvent('open-book'))">
+            <i class="fas fa-calendar-check"></i> Agendar Consulta
+          </a>
+          <a class="btn-ghost"
+            href="https://wa.me/556298244024?text=Ol%C3%A1%20Dra.%20Dayse%2C%20gostaria%20de%20agendar%20uma%20consulta"
+            rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" data-aos="fade-up" aria-labelledby="testimonials-heading">
+      <h3 id="testimonials-heading">💬 O que pacientes dizem</h3>
+
+      <p class="testimonials-intro">
+        Resultados reais, hábitos sustentáveis. Depoimentos de pacientes que alcançaram equilíbrio entre saúde, estética
+        e qualidade de vida.
+      </p>
+
+      <div class="carousel" aria-roledescription="carousel" aria-label="Depoimentos">
+        <div class="slides" role="list">
+          <article class="slide" role="listitem">
+            <div class="testimonial">
+              <div class="testimonial-top">
+                <div class="avatar" aria-hidden="true">M</div>
+                <div class="testimonial-meta">
+                  <strong class="testimonial-name">Mariana, 34</strong>
+                  <span class="testimonial-role">Mãe • Emagrecimento saudável</span>
+                </div>
+              </div>
+              <p class="testimonial-text">"Perdi 12kg com orientação prática e sem dietas extremas. Hoje mantenho o
+                resultado e tenho mais energia."</p>
+            </div>
+          </article>
+
+          <article class="slide" role="listitem">
+            <div class="testimonial">
+              <div class="testimonial-top">
+                <div class="avatar" aria-hidden="true">L</div>
+                <div class="testimonial-meta">
+                  <strong class="testimonial-name">Lucas, 28</strong>
+                  <span class="testimonial-role">Atleta amador • Performance</span>
+                </div>
+              </div>
+              <p class="testimonial-text">"A reeducação nutricional elevou meu rendimento e acelerou a recuperação —
+                orientações objetivas e fáceis de seguir."</p>
+            </div>
+          </article>
+
+          <article class="slide" role="listitem">
+            <div class="testimonial">
+              <div class="testimonial-top">
+                <div class="avatar" aria-hidden="true">C</div>
+                <div class="testimonial-meta">
+                  <strong class="testimonial-name">Carla, 41</strong>
+                  <span class="testimonial-role">Estética funcional</span>
+                </div>
+              </div>
+              <p class="testimonial-text">"Resultados visíveis na pele e na composição corporal — tudo com foco em saúde
+                e hábitos que eu consigo manter."</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" aria-label="Anterior" title="Anterior">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+          </button>
+
+          <div class="carousel-dots" role="tablist" aria-label="Navegação por páginas"></div>
+
+          <button class="carousel-btn next" aria-label="Próximo" title="Próximo">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M9 6l6 6-6 6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container" role="contentinfo">
+    <div class="footer-content">
+      <div>
+        <h4><i class="fas fa-leaf"></i> Nutricionista Dra. Dayse Neves, CRN1 4621</h4>
+        <p>Dra. Dayse Neves — Especialista em Obesidade, Estética e Esporte em Goianésia, Goiás e Região.</p>
+      </div>
+      <div class="footer-contact">
+        <div class="social-links">
+          <a href="https://www.instagram.com/nutridayseneves/" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/556298244024" class="social-link" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <small>© Dayse Neves by NutriEssence — Todos os direitos reservados</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Alpine.js (for booking widget) -->
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 100
+      });
+    });
+
+    // Mobile navigation toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      const navToggle = document.querySelector('.nav-toggle');
+      const mainNav = document.querySelector('.main-nav');
+
+      if (navToggle && mainNav) {
+        navToggle.addEventListener('click', function () {
+          const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+          this.setAttribute('aria-expanded', !expanded);
+          mainNav.classList.toggle('active');
+        });
+      }
+    });
+
+    // Booking widget exposed to Alpine
+    function bookingWidget() {
+      return {
+        form: { service: 'Avaliação Nutricional', name: '', phone: '' },
+        message: '',
+        init() {
+          // listen to global open event
+          window.addEventListener('open-book', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.querySelector('#book-btn').focus();
+          });
+        },
+        confirm() {
+          // simple validation
+          if (!this.form.name || !this.form.phone) {
+            this.message = 'Digite seu nome completo e telefone celular, por favor.';
+            return;
+          }
+          const booking = { ...this.form, createdAt: new Date().toISOString() };
+          // save to localStorage (client-side)
+          const list = JSON.parse(localStorage.getItem('nutriessence_bookings') || '[]');
+          list.push(booking);
+          localStorage.setItem('nutriessence_bookings', JSON.stringify(list));
+
+          // prepare whatsapp message (URL-encoded)
+          const text = encodeURIComponent(`Olá Dra. Dayse, gostaria de agendar: \nServiço desejado: ${booking.service}\nMeu Nome: ${booking.name}\nTelefone: ${booking.phone}`);
+          const wa = `https://wa.me/556298244024?text=${text}`;
+
+          this.message = 'Reserva temporária criada — clique no link abaixo para confirmar via WhatsApp.';
+
+          // open WhatsApp in new tab
+          window.open(wa, '_blank');
+
+          // gently clear form after a short delay
+          setTimeout(() => { this.form = { service: 'Avaliação Nutricional', name: '', phone: '' }; }, 600);
+        },
+        clear() { this.form = { service: 'Avaliação Nutricional', name: '', phone: '' }; this.message = ''; }
+      }
+    }
+  </script>
+  <script>
+    /* Pure JS carousel with keyboard + pointer drag + responsive slidesPerView */
+    (function () {
+      const carousel = document.querySelector('.carousel');
+      if (!carousel) return;
+
+      const slidesEl = carousel.querySelector('.slides');
+      const slides = Array.from(carousel.querySelectorAll('.slide'));
+      const btnPrev = carousel.querySelector('.carousel-btn.prev');
+      const btnNext = carousel.querySelector('.carousel-btn.next');
+      const dotsWrap = carousel.querySelector('.carousel-dots');
+
+      let index = 0; // current first visible slide index
+      let visible = getVisibleCount();
+      let isDragging = false;
+      let startX = 0, currentTranslate = 0, animationFrame = null;
+
+      function getVisibleCount() {
+        const w = window.innerWidth;
+        if (w >= 1000) return 3;
+        if (w >= 700) return 2;
+        return 1;
+      }
+
+      function updateSlideWidthVar() {
+        visible = getVisibleCount();
+        const widthPct = 100 / visible;
+        slides.forEach(s => s.style.setProperty('--slide-width', widthPct + '%'));
+      }
+
+      function clampIndex(i) {
+        // keep index in range 0..(slides.length - 1)
+        const n = slides.length;
+        return ((i % n) + n) % n;
+      }
+
+      function isVisibleSlide(i) {
+        // returns true if slide i is visible given current index and visible count (handles wrap)
+        const n = slides.length;
+        for (let k = 0; k < visible; k++) {
+          if ((index + k) % n === i) return true;
+        }
+        return false;
+      }
+
+      function moveTo(i, smooth = true) {
+        index = clampIndex(i);
+        const shiftPct = (index * (100 / visible));
+        slidesEl.style.transition = smooth ? 'transform 360ms cubic-bezier(.22,.9,.3,1)' : 'none';
+        slidesEl.style.transform = `translateX(-${shiftPct}%)`;
+        updateAria();
+        updateDots();
+      }
+
+      function next() { moveTo(index + 1); }
+      function prev() { moveTo(index - 1); }
+
+      /* build dots */
+      function createDots() {
+        dotsWrap.innerHTML = '';
+        slides.forEach((_, i) => {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'dot';
+          b.setAttribute('aria-label', 'Ir para slide ' + (i + 1));
+          b.dataset.index = i;
+          b.addEventListener('click', () => moveTo(i));
+          dotsWrap.appendChild(b);
+        });
+      }
+
+      function updateDots() {
+        const dots = Array.from(dotsWrap.children);
+        dots.forEach((d, i) => {
+          d.setAttribute('aria-pressed', isVisibleSlide(i) ? 'true' : 'false');
+        });
+      }
+
+      function updateAria() {
+        slides.forEach((s, i) => {
+          if (isVisibleSlide(i)) {
+            s.removeAttribute('aria-hidden');
+            s.inert = false;
+          } else {
+            s.setAttribute('aria-hidden', 'true');
+            // when browser supports inert, it helps: otherwise ignore
+            try { s.inert = true; } catch (e) { }
+          }
+        });
+      }
+
+      /* Pointer (drag) handling */
+      function onPointerDown(e) {
+        isDragging = true;
+        startX = (e.touches ? e.touches[0].clientX : e.clientX);
+        slidesEl.style.transition = 'none';
+        carousel.classList.add('is-dragging');
+        // remember current translate
+        const computed = getComputedStyle(slidesEl).transform;
+        currentTranslate = 0;
+        if (computed && computed !== 'none') {
+          const mat = new WebKitCSSMatrix(computed);
+          currentTranslate = mat.m41; // px
+        }
+        // prevent text/image drag
+        e.preventDefault?.();
+      }
+
+      function onPointerMove(e) {
+        if (!isDragging) return;
+        const clientX = (e.touches ? e.touches[0].clientX : e.clientX);
+        const dx = clientX - startX;
+        const containerW = carousel.clientWidth;
+        // compute percentage move relative to visible size
+        const movePct = (dx / containerW) * 100;
+        const baseShift = index * (100 / visible);
+        slidesEl.style.transform = `translateX(calc(-${baseShift}% + ${movePct}%))`;
+      }
+
+      function onPointerUp(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        carousel.classList.remove('is-dragging');
+        const endX = (e.changedTouches ? e.changedTouches[0].clientX : e.clientX);
+        const dx = endX - startX;
+        const threshold = Math.max(20, carousel.clientWidth * 0.08); // 8% width or 20px
+        if (dx < -threshold) {
+          next();
+        } else if (dx > threshold) {
+          prev();
+        } else {
+          moveTo(index); // reset
+        }
+      }
+
+      /* keyboard navigation (when carousel focused) */
+      function onKeyDown(e) {
+        if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+        else if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
+      }
+
+      /* handle resize — recalc visible count and reposition nicely */
+      let resizeTimer;
+      function onResize() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          const oldVisible = visible;
+          updateSlideWidthVar();
+          if (visible !== oldVisible) {
+            // clamp index to valid range and update transform without animation
+            moveTo(index, false);
+          } else {
+            // just adjust transform so percent calculations match
+            moveTo(index, false);
+          }
+        }, 120);
+      }
+
+      /* init */
+      updateSlideWidthVar();
+      createDots();
+      moveTo(0, false);
+
+      // events
+      btnNext.addEventListener('click', next);
+      btnPrev.addEventListener('click', prev);
+
+      // pointer (touch & mouse)
+      // prefer pointer events if supported
+      if (window.PointerEvent) {
+        slidesEl.addEventListener('pointerdown', onPointerDown, { passive: false });
+        window.addEventListener('pointermove', onPointerMove, { passive: false });
+        window.addEventListener('pointerup', onPointerUp, { passive: false });
+      } else {
+        slidesEl.addEventListener('touchstart', onPointerDown, { passive: false });
+        window.addEventListener('touchmove', onPointerMove, { passive: false });
+        window.addEventListener('touchend', onPointerUp, { passive: false });
+        slidesEl.addEventListener('mousedown', onPointerDown);
+        window.addEventListener('mousemove', onPointerMove);
+        window.addEventListener('mouseup', onPointerUp);
+      }
+
+      // focus/keyboard handling
+      carousel.setAttribute('tabindex', '0');
+      carousel.addEventListener('keydown', onKeyDown);
+
+      // window resize
+      window.addEventListener('resize', onResize);
+
+      // Make dots keyboard-focusable & visible state initially
+      dotsWrap.querySelectorAll('button').forEach(b => b.setAttribute('tabindex', '0'));
+
+      // expose for debugging (optional)
+      // window.__simpleCarousel = { moveTo, next, prev };
+
+    })();
+  </script>
+
+</body>
+
+</html>
