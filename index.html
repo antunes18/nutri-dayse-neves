@@ -1,306 +1,479 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Dayse Neves | Nutricionista - NutriEssence</title>
+    <meta name="description"
+        content="Dra. Dayse Neves, nutricionista especialista em obesidade, estética esporte. Saúde e bem-estar através da nutrição personalizada em Goianésia, Goiás.">
 
-  <!-- Primary Meta Tags -->
-  <title>Dra. Dayse Neves CRN1 4621 — Nutrição, Estética & Esporte em Goianésia, GO</title>
-  <meta name="description"
-    content="Dra. Dayse Neves CRN1 4621: Especialista em Nutrição, Obesidade, Estética e Esporte. Atendimento presencial em Goianésia, GO e online. Agende sua consulta." />
-  <meta name="keywords"
-    content="nutricionista, obesidade, estética, esporte, Goianésia, nutrição esportiva, emagrecimento, dieta, acompanhamento nutricional, goianesia, go, goiás, Goiás" />
-  <meta name="author" content="Dra. Dayse Neves" />
-  <meta name="robots" content="index, follow" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nutriessence.com.br/">
+    <meta property="og:title" content="Dra. Dayse Neves | Nutricionista - NutriEssence">
+    <meta property="og:description"
+        content="Nutrição especializada para obesidade, estética e esporte. Sua jornada para uma vida mais saudável começa aqui.">
+    <meta property="og:image" content="https://www.nutriessence.com.br/img/og-image.jpg">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://nutridayseneves.com.br/" />
-  <meta property="og:title" content="NutriEssence • Dra. Dayse Neves — Nutrição, Estética & Esporte" />
-  <meta property="og:description"
-    content="Especialista em Obesidade, Estética e Esporte. Atendimento em Goianésia, GO. Agende sua consulta." />
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Dra. Dayse Neves - Nutricionista - NutriEssence",
+      "description": "Nutricionista especialista em obesidade, estética e esporte.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Goianésia",
+        "addressRegion": "GO",
+        "addressCountry": "BR"
+      },
+      "medicalSpecialty": "Nutrition",
+      "telephone": "+556298244024"
+    }
+    </script>
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://nutridayseneves.com.br/" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- AOS (Animate On Scroll) CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
-  <br>
-  <header class="site-header container" role="banner">
-    <div class="brand">
-      <div class="logo-mark" aria-hidden="true" role="img" aria-label="NutriEssence - Dra. Dayse Neves">
-        <i class="fas fa-leaf"></i>
-      </div>
-      <div class="brand-text">
-        <h1>Dra. Dayse Neves, CRN1 4621</h1>
-        <p>'Nutri' Dayse Neves | Nutrição • Estética • Esporte — Goianésia, GO</p>
-      </div>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <div class="logo-text">Nutri Dayse Neves</div>
+                        <div class="logo-subtext">CRN1 4621</div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#nutriessence">NutriEssence</a></li>
+                            <li><a href="#agendamento">Agendamento</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                        <button class="mobile-menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1 class="hero-title" style="color: aliceblue;">Dra. Dayse Neves</h1>
+                    <p class="hero-subtitle">Nutricionista Especialista em Obesidade, Estética e Esporte.</p>
+                    <p class="hero-tagline">Sua jornada para uma vida mais saudável começa aqui.</p>
+                    <div class="cta-buttons">
+                        <a href="#agendamento" class="cta-button">Agendar Consulta</a>
+                        <a href="#contato" class="cta-button secondary">Fale Comigo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="nutricionista_dayse_neves.jpeg" alt="Nutri Dra. Dayse Neves">
+                    </div>
+                    <div class="about-text" data-aos="fade-left">
+                        <h2>Sobre a Dra. Dayse Neves</h2>
+                        <p>Olá, sou Dra. Dayse Neves, nutricionista, CRN1 4621, e estou aqui para te ajudar a alcançar
+                            seus
+                            objetivos de saúde, bem-estar e performance. Minha missão é proporcionar um atendimento
+                            humanizado e personalizado, com base científica, para transformar sua relação com a comida e
+                            seu corpo.</p>
+                        <p>Com especialização em obesidade, estética e nutrição esportiva, desenvolvo planos alimentares
+                            individualizados que respeitam suas preferências, rotina e necessidades específicas.</p>
+                        <p>Atendo presencialmente em Goianésia, Goiás, na Clínica NutriEssence, e também ofereço
+                            consultas online para todo o Brasil. Meu objetivo é empoderar você através da educação
+                            nutricional, para que possa fazer escolhas alimentares conscientes e sustentáveis.</p>
+                        <div class="specialty-badge">Especialista em Obesidade, Estética e Esporte</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section - NOVA VERSÃO -->
+        <section class="appointment" id="agendamento">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Agende sua Consulta</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Preencha o formulário abaixo para
+                    ser direcionado ao WhatsApp e confirmar seu agendamento</p>
+
+                <div class="appointment-container" data-aos="fade-up" data-aos-delay="200">
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                            <div class="error-message" id="name-error">Por favor, informe seu nome completo</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone Celular <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(62) 9 9999-9999">
+                            <div class="error-message" id="phone-error">Por favor, informe um número de telefone válido
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Data Desejada <span class="required">*</span></label>
+                            <input type="date" id="date" name="date" required>
+                            <div class="error-message" id="date-error">Por favor, selecione uma data futura</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Turno/Horário de Preferência <span class="required">*</span></label>
+                            <select id="time" name="time" required>
+                                <option value="" disabled selected>Selecione um horário</option>
+                                <option value="Manhã (8h-12h)">Manhã (8h-12h)</option>
+                                <option value="Tarde (14h-18h)">Tarde (14h-18h)</option>
+                                <option value="Não tenho preferência">Não tenho preferência</option>
+                            </select>
+                            <div class="error-message" id="time-error">Por favor, selecione um turno</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Serviço Desejado <span class="required">*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Selecione um serviço</option>
+                                <option value="Nutrição para Obesidade">Nutrição para Obesidade</option>
+                                <option value="Nutrição Estética">Nutrição Estética</option>
+                                <option value="Nutrição Esportiva">Nutrição Esportiva</option>
+                                <option value="Saúde Metabólica">Saúde Metabólica</option>
+                                <option value="Reeducação Alimentar">Reeducação Alimentar</option>
+                                <option value="Consultoria Nutricional">Consultoria Nutricional</option>
+                            </select>
+                            <div class="error-message" id="service-error">Por favor, selecione um serviço</div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Fazer Agendamento</button>
+                    </form>
+
+                    <div class="whatsapp-info">
+                        <p>Você será redirecionado para o WhatsApp da Dra. Dayse Neves (62) 9824-4024 com as informações
+                            do formulário para confirmar seu agendamento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="servicos">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Especialidades e Serviços</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Cuidados nutricionais especializados
+                    para suas necessidades</p>
+
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <h3 class="service-title">Nutrição para Obesidade</h3>
+                        <p>Tratamento personalizado para perda de peso saudável e sustentável, com foco inovador
+                            em reeducação alimentar e mudança de hábitos.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3 class="service-title">Nutrição Estética</h3>
+                        <p>Abordagem nutricional para saúde da pele, cabelos, unhas e combate à celulite, com alimentos
+                            que promovem beleza de dentro para fora.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3 class="service-title">Nutrição Esportiva</h3>
+                        <p>Planos alimentares para atletas e praticantes de atividade física, avec foco em performance,
+                            energia e recuperação muscular.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="service-title">Saúde Metabólica</h3>
+                        <p>Tratamento nutricional para diabetes, dislipidemias, hipertensão e outras condições
+                            metabólicas.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h3 class="service-title">Reeducação Alimentar</h3>
+                        <p>Processo educativo para desenvolver uma relação saudável com a comida, sem dietas restritivas
+                            ou radicais.</p>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="service-title">Consultoria Nutricional</h3>
+                        <p>Orientação para planejamento de cardápios, compras saudáveis e preparo de refeições práticas
+                            e nutritivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NutriEssence Section -->
+        <section class="nutriessence" id="nutriessence">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">NutriEssence</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Saúde - Estética - Nutrição em
+                    Goianésia</p>
+
+                <div class="nutriessence-content">
+                    <div class="nutriessence-info" data-aos="fade-right">
+                        <div class="nutriessence-logo">NutriEssence</div>
+                        <p>A NutriEssence é um espaço dedicado ao cuidado integral da saúde através da nutrição. Fundada
+                            e dirigida pela Dra. Dayse Neves, nossa clínica oferece um ambiente acolhedor e profissional
+                            para que você possa transformar sua relação com a alimentação.</p>
+                        <br>
+                        <p>Na NutriEssence, acreditamos que cada pessoa é única e, por isso, merece um atendimento
+                            personalizado que considere suas particularidades, objetivos e estilo de vida.</p>
+                        <br>
+                        <p>Nosso espaço foi cuidadosamente planejado para proporcionar conforto e bem-estar durante suas
+                            consultas, com equipamentos de avaliação corporal de precisão e ambiente climatizado.</p>
+                    </div>
+
+                    <div class="nutriessence-map" data-aos="fade-left">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d244.87146839334773!2d-49.11748869012924!3d-15.333030686701115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935cc1f6c94e8431%3A0x59fa2857e2b70f5!2sEmagre%20See%20Emagrecimento%20%26%20Est%C3%A9tica!5e1!3m2!1spt-BR!2sbr!4v1756987116693!5m2!1spt-BR!2sbr"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Entre em Contato</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Estou à disposição para esclarecer
+                    suas dúvidas e ajudar em sua jornada nutricional</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Telefone/WhatsApp</h3>
+                                <p>(62) 9 9824-4024</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>contato@nutriessence.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-aos="fade-right" data-aos-delay="400">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Localização</h3>
+                                <p>Avenida Goiás Sul n 468, CEP 76382-187, em frente ao Hotel Planaltos, Goianésia,
+                                    Goiás.</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://api.whatsapp.com/send?phone=556298244024" class="social-link"
+                                target="_blank" data-aos="fade-up" data-aos-delay="500">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="" class="social-link" target="_blank" data-aos="fade-up" data-aos-delay="600">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <div class="footer-logo">Nutri Dra. Dayse Neves, CRN1 4621</div>
+                        <p>Especialista em Obesidade, Estética e Esporte</p>
+                        <p>Sua jornada para uma vida mais saudável começa aqui.</p>
+                        <p>NutriEssence - Goianésia/GO</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="#servicos">Nutrição para Obesidade</a></li>
+                            <li><a href="#servicos">Nutrição Estética</a></li>
+                            <li><a href="#servicos">Nutrição Esportiva</a></li>
+                            <li><a href="#servicos">Saúde Metabólica</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#nutriessence">NutriEssence</a></li>
+                            <li><a href="#agendamento">Agendamento</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    &copy; 2025 Dra. Dayse Neves, CRN1 4621. Site desenvolvido por <a
+                        href="http://instagram/dev_antunes062" class="dev">Dev. Thiago Antunes</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="main-navigation">
-      <i class="fas fa-bars"></i>
-    </button>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <nav id="main-navigation" class="main-nav" aria-label="Menu principal">
-      <a href="#services"><i class="fas fa-concierge-bell"></i> Serviços</a>
-      <a href="#about"><i class="fas fa-user-md"></i> Sobre</a>
-      <a href="#testimonials"><i class="fas fa-comments"></i> Depoimentos</a>
-      <button class="btn-primary" onclick="document.getElementById('book-btn').click()">
-        <i class="fas fa-calendar-check"></i> Agendar
-      </button>
-    </nav>
-  </header>
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                easing: 'ease-in-out'
+            });
 
-  <main id="main-content" class="container" role="main">
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-content" data-aos="fade-up">
-        <span class="eyebrow">
-          <i class="fas fa-star"></i> Especialista em Obesidade • Estética • Esporte
-        </span>
-        <h2 id="hero-heading">Transforme sua relação com o corpo e com a saúde de forma elegante e sustentável.</h2>
-        <p class="lead">Atendimento personalizado em Goianésia, com foco em resultados duradouros, estética funcional e
-          performance esportiva. Planos presenciais e online.</p>
+            // Configurar data mínima como hoje
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            const todayStr = `${yyyy}-${mm}-${dd}`;
+            document.getElementById('date').setAttribute('min', todayStr);
 
-        <div class="quick-cta">
-          <button id="book-btn" class="btn-primary" onclick="window.dispatchEvent(new CustomEvent('open-book'))">
-            <i class="fas fa-calendar-check"></i> Agendar Consulta
-          </button>
-          <a class="btn-ghost" href="https://wa.me/556298244024" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
-        <br>
-        <div class="mt-">
-          <div class="card" data-aos="fade-left">
-            <div class="card-with-icon">
-              <div class="card-icon">
-                <i class="fas fa-gift"></i>
-              </div>
-              <div>
-                <strong>Promoção de boas-vindas</strong>
-                <p>Avaliação nutricional completa + plano inicial com 10% de desconto para novos pacientes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            // Formatar telefone enquanto digita
+            const phoneInput = document.getElementById('phone');
+            phoneInput.addEventListener('input', function (e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 11) value = value.slice(0, 11);
 
-      <aside class="hero-aside" data-aos="fade-left">
-        <div class="card">
-          <h3><i class="fas fa-calendar-alt"></i> Agende sua consulta</h3>
-          <p>Escolha dia, horário e serviço. Ao confirmar você receberá um link via WhatsApp para finalizar o
-            atendimento.</p>
+                if (value.length > 0) {
+                    value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+                    if (value.length > 9) {
+                        value = value.replace(/(\d{5})(\d)/, '$1-$2');
+                    }
+                }
 
-          <!-- Booking widget (Alpine.js) -->
-          <div x-data="bookingWidget()" x-init="init()">
-            <label for="service-select">
-              <i class="fas fa-concierge-bell"></i> Serviço
-            </label>
-            <select id="service-select" x-model="form.service" aria-describedby="service-help">
-              <option value="Avaliação Nutricional">Avaliação Nutricional</option>
-              <option value="Obesidade">Consulta Obesidade</option>
-              <option value="Estética">Estética</option>
-              <option value="Esporte">Nutrição Esportiva</option>
-            </select>
-            <div id="service-help" class="visually-hidden">Selecione o tipo de serviço desejado</div>
+                e.target.value = value;
+            });
 
-            <label for="name-input">
-              <i class="fas fa-user"></i> Nome
-            </label>
-            <input id="name-input" type="text" x-model="form.name" placeholder="Seu nome completo"
-              aria-required="true" />
+            // Validar e enviar formulário
+            const form = document.getElementById('appointment-form');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-            <label for="phone-input">
-              <i class="fas fa-phone"></i> Celular
-            </label>
-            <input id="phone-input" type="tel" x-model="form.phone" placeholder="Ex: 62 9 9999-9999"
-              aria-required="true" />
+                // Reset erros
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.style.display = 'none';
+                });
 
-<div class="form-actions" style="display:flex;gap:8px;margin-top:16px">
-  <button class="btn-primary" @click="confirmBooking()">
-    <i class="fas fa-check"></i> Confirmar
-  </button>
-  <button class="btn-ghost" @click="clearForm()">
-    <i class="fas fa-times"></i> Limpar
-  </button>
-</div>
+                let isValid = true;
 
-            <template x-if="message">
-              <p x-text="message" role="status" aria-live="polite"
-                style="margin-top:12px;color:var(--forest-2);font-weight:600"></p>
-            </template>
-          </div>
-        </div>
-      </aside>
-    </section>
+                // Validar nome
+                const name = document.getElementById('name').value.trim();
+                if (!name) {
+                    document.getElementById('name-error').style.display = 'block';
+                    isValid = false;
+                }
 
-    <!-- SERVICES -->
-    <section id="services" data-aos="fade-up" aria-labelledby="services-heading" style="margin-bottom: 32px;">
-      <h3 id="services-heading"><i class="fas fa-concierge-bell"></i> Serviços</h3>
-      <div class="services">
-        <article class="service" aria-labelledby="obesidade-heading">
-          <div class="service-icon">
-            <i class="fas fa-weight-scale"></i>
-          </div>
-          <h4 id="obesidade-heading">Obesidade</h4>
-          <p>Acompanhamento especializado, com protocolo individualizado e foco em saúde metabólica.</p>
-        </article>
-        <article class="service" aria-labelledby="estetica-heading">
-          <div class="service-icon">
-            <i class="fas fa-spa"></i>
-          </div>
-          <h4 id="estetica-heading">Estética</h4>
-          <p>Planos nutricionais para melhora da pele, composição corporal e tratamentos complementares.</p>
-        </article>
-        <article class="service" aria-labelledby="esporte-heading">
-          <div class="service-icon">
-            <i class="fas fa-dumbbell"></i>
-          </div>
-          <h4 id="esporte-heading">Esporte</h4>
-          <p>Nutrição para desempenho: estratégias de energia, recuperação e composição corporal para atletas.</p>
-        </article>
-      </div>
-    </section>
+                // Validar telefone (pelo menos 14 caracteres para (00) 00000-0000)
+                const phone = document.getElementById('phone').value;
+                if (phone.length < 14) {
+                    document.getElementById('phone-error').style.display = 'block';
+                    isValid = false;
+                }
 
-    <!-- ABOUT -->
-    <section id="about" class="about" data-aos="fade-up" aria-labelledby="about-heading">
-      <div class="photo" aria-hidden="true">
-        <img src="nutricionista_dayse_neves.jpeg"
-          alt="Foto da Dra. Dayse Neves sorrindo, vestindo jaleco branco e com braços cruzados."
-          style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      </div>
-      <div class="bio">
-        <h3 id="about-heading"><i class="fas fa-star"></i> Sobre Mim</h3>
-        <p>A Nutricionista (CRN1 4621) com atuação clínica em obesidade, estética e performance esportiva. Atende
-          presencialmente em Goianésia e online para todo o Brasil.</p>
-        <p>Abordagem humanizada, baseada em evidências e em planos realistas
-          — o objetivo é aliar estética, saúde e funcionalidade.</p>
-        <div class="bio-actions">
-          <a class="btn-primary" href="#" onclick="window.dispatchEvent(new CustomEvent('open-book'))">
-            <i class="fas fa-calendar-check"></i> Agendar Consulta
-          </a>
-          <a class="btn-ghost"
-            href="https://wa.me/556298244024?text=Ol%C3%A1%20Dra.%20Dayse%2C%20gostaria%20de%20agendar%20uma%20consulta"
-            rel="noopener noreferrer">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
+                // Validar data
+                const date = document.getElementById('date').value;
+                if (!date || new Date(date) < new Date(todayStr)) {
+                    document.getElementById('date-error').style.display = 'block';
+                    isValid = false;
+                }
 
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" data-aos="fade-up" aria-labelledby="testimonials-heading">
-      <h3 id="testimonials-heading">💬 O que pacientes dizem</h3>
+                // Validar turno
+                const time = document.getElementById('time').value;
+                if (!time) {
+                    document.getElementById('time-error').style.display = 'block';
+                    isValid = false;
+                }
 
-      <p class="testimonials-intro">
-        Resultados reais, hábitos sustentáveis. Depoimentos de pacientes que alcançaram equilíbrio entre saúde, estética
-        e qualidade de vida.
-      </p>
+                // Validar serviço
+                const service = document.getElementById('service').value;
+                if (!service) {
+                    document.getElementById('service-error').style.display = 'block';
+                    isValid = false;
+                }
 
-      <div class="carousel" aria-roledescription="carousel" aria-label="Depoimentos">
-        <div class="slides" role="list">
-          <article class="slide" role="listitem">
-            <div class="testimonial">
-              <div class="testimonial-top">
-                <div class="avatar" aria-hidden="true">M</div>
-                <div class="testimonial-meta">
-                  <strong class="testimonial-name">Mariana, 34</strong>
-                  <span class="testimonial-role">Mãe • Emagrecimento saudável</span>
-                </div>
-              </div>
-              <p class="testimonial-text">"Perdi 12kg com orientação prática e sem dietas extremas. Hoje mantenho o
-                resultado e tenho mais energia."</p>
-            </div>
-          </article>
+                if (isValid) {
+                    // Formatando a data para exibição
+                    const dateObj = new Date(date);
+                    const formattedDate = dateObj.toLocaleDateString('pt-BR');
 
-          <article class="slide" role="listitem">
-            <div class="testimonial">
-              <div class="testimonial-top">
-                <div class="avatar" aria-hidden="true">L</div>
-                <div class="testimonial-meta">
-                  <strong class="testimonial-name">Lucas, 28</strong>
-                  <span class="testimonial-role">Atleta amador • Performance</span>
-                </div>
-              </div>
-              <p class="testimonial-text">"A reeducação nutricional elevou meu rendimento e acelerou a recuperação —
-                orientações objetivas e fáceis de seguir."</p>
-            </div>
-          </article>
+                    // Criar mensagem para WhatsApp
+                    const message = `Olá, gostaria de agendar uma consulta!%0A%0A` +
+                        `*Nome:* ${name}%0A` +
+                        `*Telefone:* ${phone}%0A` +
+                        `*Data desejada:* ${formattedDate}%0A` +
+                        `*Turno preferido:* ${time}%0A` +
+                        `*Serviço desejado:* ${service}`;
 
-          <article class="slide" role="listitem">
-            <div class="testimonial">
-              <div class="testimonial-top">
-                <div class="avatar" aria-hidden="true">C</div>
-                <div class="testimonial-meta">
-                  <strong class="testimonial-name">Carla, 41</strong>
-                  <span class="testimonial-role">Estética funcional</span>
-                </div>
-              </div>
-              <p class="testimonial-text">"Resultados visíveis na pele e na composição corporal — tudo com foco em saúde
-                e hábitos que eu consigo manter."</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="carousel-controls">
-          <button class="carousel-btn prev" aria-label="Anterior" title="Anterior">
-            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M15 18l-6-6 6-6"></path>
-            </svg>
-          </button>
-
-          <div class="carousel-dots" role="tablist" aria-label="Navegação por páginas"></div>
-
-          <button class="carousel-btn next" aria-label="Próximo" title="Próximo">
-            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M9 6l6 6-6 6"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="container" role="contentinfo">
-    <div class="footer-content">
-      <div>
-        <h4><i class="fas fa-leaf"></i> Nutricionista Dra. Dayse Neves, CRN1 4621</h4>
-        <p>Dra. Dayse Neves — Especialista em Obesidade, Estética e Esporte em Goianésia, Goiás e Região.</p>
-      </div>
-      <div class="footer-contact">
-        <div class="social-links">
-          <a href="https://www.instagram.com/nutridayseneves/" class="social-link" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://wa.me/556298244024" class="social-link" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
-        <small>© Dayse Neves by NutriEssence — Todos os direitos reservados</small>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Alpine.js (for booking widget) -->
-  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-  <!-- AOS.js -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script src="index.js"></script>
-
+                    // Redirecionar para WhatsApp
+                    window.open(`https://wa.me/556298244024?text=${message}`, '_blank');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
